@@ -1,0 +1,10 @@
+- name: Maintenance on TSE
+  hosts: all
+  vars:
+      Message: Message de test Ansible
+  tasks:
+  - name: Ping TSE
+    win_ping:
+    
+  - name: send msg
+    win_shell: msg.exe /server:serveur1.esgi.lab * "{{ Message }}"
