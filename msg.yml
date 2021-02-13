@@ -7,4 +7,4 @@
     win_ping:
     
   - name: send msg
-    win_shell: msg.exe /server:serveur1.esgi.lab * "{{ Message }}"
+    win_shell: msg.exe /server:172.180.0.100 * "{{ Message }}"
